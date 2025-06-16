@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Guidance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>AI Career Guidance Form</h2>
+    <form method="POST" action="/submit">
+        <label>Do you enjoy Mathematics?</label>
+        <select name="math">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Are you interested in Computers?</label>
+        <select name="computers">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Do you enjoy designing?</label>
+        <select name="design">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Do you prefer practical or theory work?</label>
+        <select name="work">
+            <option value="practical">Practical</option>
+            <option value="theory">Theory</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
